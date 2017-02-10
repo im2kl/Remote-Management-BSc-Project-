@@ -1,0 +1,102 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#EFEFEF; font-size: 13px; color: #3B3B3B; font-family: courier new, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; text-decoration:none; color:#3B3B3B}
+nav a{ color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: -7px 0 10px; line-height: 1.1em; font-size: 1.0em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* 
+#1B94C3 : Blue
+#3B3B3B : Grey
+#cfcfcf : grey,border
+#EFEFEF : Grey.Background
+ */	
+	
+/* Structure */
+#wrapper {
+	width: 96%;	
+	max-width: 920px;
+	margin: auto;
+	padding: 2%;
+	} 
+
+	#main {
+		width: 40%;
+		max-width:400px;
+		min-width:300px;
+		margin-left:30%;
+		float: left;
+		border-top:1px solid #1B94C3;
+		border-bottom:1px solid #1B94C3;
+		padding:1% 1% 0.5% 1%;
+		}	
+	#main label{
+		float:left;
+		width:26%;
+		margin-right:2px;
+	}		
+	#passw{
+		float:left;
+		width:70%;
+		border:1px solid #1B94C3;
+	}
+	#subm{
+		float:left;
+		display:none;
+	}
+/* Logo H1 */
+header h1 {
+	height: 70px;
+	width: 220px;
+	padding-left:100%;
+	float: left;
+	display: block;
+	background: url(../images/logo.png) 0 0 no-repeat;
+	text-indent: -9999px;
+	}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+
+#main label{
+	float:left;
+	width:26%;
+	margin-right:2px;
+}		
+#passw{
+	float:left;
+	width:68%;
+	border:1px solid #1B94C3;
+}
+	#subm{
+		float:left;
+		display:inline;
+		color:#1B94C3;
+		border:1px solid #1B94C3;
+		width:40%;
+		background:#cfcfcf;
+		margin:7px auto 5px 30%;
+	}
+
+#main {
+	width: 90%;
+
+	margin-left:5%;
+	float: left;
+	border-top:1px solid #1B94C3;
+	border-bottom:1px solid #1B94C3;
+	padding:1%;
+	min-width:50px;
+	}				
+}
